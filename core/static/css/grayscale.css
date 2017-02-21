@@ -434,3 +434,7 @@ padding-top: 0.25em;
 .invisible {
   display:none;
 }
+
+.icon img {
+  width: 3em;
+}
