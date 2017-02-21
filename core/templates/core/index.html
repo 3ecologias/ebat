@@ -37,22 +37,20 @@
 <body id="page-top" data-spy="scroll">
 
     <!-- Navigation -->
-    <div class="container">
-      <div class="row">
-        <div class="top-fonts col-sm-4 col-xs-8 col-sm-offset-2">
-          <a class="page-scroll" href="tel:081996658778">
-            <i class="fa fa-phone-square fa-2x"></i> <span class="tel">4003-2234</span>
+    <div class="top">
+        <div class="tel">
+          <a href="tel:081996658778">
+            <i class="fa fa-phone-square fa-3x"></i> <span>4003-2234</span>
           </a>
         </div>
-        <div class="top-fonts col-sm-4 col-xs-4 col-sm-offset-2">
-          <input class="search" type="search" placeholder="Ligamos para você" />
-          <div class="pull-right">
-            <div class="icon tel">
-              <i class="fa fa-fax" aria-hidden="true"></i>
+        <div class="we-call">
+          <input class="search" type="search" placeholder="Digite seu telefone" />
+          <div class="">
+            <div class="icon">
+              <i class="fa fa-fax fa-3x" aria-hidden="true"></i>
             </div>
           </div>
         </div>
-      </div>
     </div>
 
     <!-- Intro Header -->
@@ -166,7 +164,11 @@
       $('.search').toggleClass('expanded');
     });
     </script>
-
+    <script>
+    $('.icon').click(function () {
+      $('.tel').toggleClass('invisible');
+    });
+    </script>
 
 </body>
 
