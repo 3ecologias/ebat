@@ -19,8 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="{% static 'css/grayscale.css' %}" rel="stylesheet">
@@ -72,7 +71,7 @@
                    <div class="row space">
                        <div class="col-sm-4 col-sm-offset-4">
                          <h3> Socorro em Baterias </h3>
-                         <a href="#about" class="page-scroll">
+                         <a href="#about" class="btn btn-circle page-scroll">
                              <i class="fa fa-question-circle animated fa-3x"></i>
                          </a>
                        </div>
@@ -85,13 +84,11 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Sua bateria falhou?</h2>
-                <p>Não se preocupe, a gente resolve em até 40 minutos.</p>
+            <div class="col-sm-6 col-sm-offset-6">
                 <h2>Como funciona?</h2>
-                <p>1. Ligue ou forneça o seu número para o nosso atendimento;</p>
-                <p>2. Forneça as informações de localização e dados sobre o veículo;</p>
-                <p>3. Em até 40 minutos você receberá uma visita para instalação da bateria.</p>
+                <h3>1. Ligue ou forneça o seu número para o nosso atendimento;</h3>
+                <h3>2. Forneça as informações de localização e dados sobre o veículo;</h3>
+                <h3>3. Em até 40 minutos você receberá uma visita para instalação da bateria.</h3>
             </div>
         </div>
     </section>
@@ -133,7 +130,6 @@
     </section>
 
     <!-- Map Section -->
-    <div id="map"></div>
 
     <!-- Footer -->
     <footer>
@@ -151,11 +147,8 @@
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
     <!-- Theme JavaScript -->
-    <script src="{% static 'js/grayscale.min.js' %}"></script>
+    <script src="{% static 'js/grayscale.js' %}"></script>
     <!-- Scripts -->
     <script src="{% static 'js/parallax.js' %}"></script>
     <script>
@@ -166,6 +159,7 @@
 
     </script>
     <script>
+    var icons = $('.icon');
     $('.icon').click(function () {
       $('.search').toggleClass('expanded');
     });
