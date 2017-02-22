@@ -7,8 +7,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Bateria entregue em 40 minutos no Recife">
+    <meta name="keywords" content="bateria, bateria automotiva, bateria para carros, carros, delivery, entrega, delivery de bateria, entrega de bateria">
+    <meta name="author" content="3ecologias">
     <!-- Behavioral Meta Data -->
     <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -43,7 +44,8 @@
           </a>
         </div>
         <div class="we-call">
-          <input class="search" type="search" placeholder="Digite seu telefone" />
+          <input class="search" type="search" placeholder="Envie seu telefone" />
+          <button type="submit" class="call-center"><i class="fa fa-share-square fa-3x" aria-hidden="true"></i></button>
           <div class="">
             <div class="icon">
               <!-- <i class="fa fa-fax fa-3x" aria-hidden="true"></i> -->
@@ -115,14 +117,14 @@
     </section>
     <!-- Download Section -->
     <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-sm-8">
+        <div class="download-section container">
+            <div class="row">
+                <center class="col-sm-4 col-sm-offset-4">
                     <img class="img-responsive" src="{% static 'img/119583.svg' %}">
-                </div>
-                <div class="col-sm-4">
-                    <h2>Atendemos Recife e toda região metropolitana</h2>
-                </div>
+                </center>
+                <center class="col-sm-4 col-sm-offset-4 area">
+                    <h2>Atendemos Recife <br>e toda região metropolitana</h2>
+                </center>
             </div>
         </div>
     </section>
@@ -133,7 +135,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Fale com a gente!</h2>
-                    <h3 class="section-subheading"> Dúvidas ou sugestões?<br> Quer ser um revendedor?</h3>
+                    <h3 class="section-subheading"> Dúvidas?<br> Quer revender?</h3>
                 </div>
             </div>
             <div class="row">
@@ -180,8 +182,13 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+            <p>EBAT &copy; 2017</p>
         </div>
+        <center class="ecologias ">
+           <a href="http://3ecologias.net" target="blank">
+             <img class="img-responsive" src="{% static 'img/logo-3e.png' %}">
+           </a>
+        </center>
     </footer>
 
     <!-- jQuery -->
@@ -208,6 +215,7 @@
     var icons = $('.icon');
     $('.icon').click(function () {
       $('.search').toggleClass('expanded');
+      $('.call-center').toggleClass('expanded');
     });
     </script>
     <script>

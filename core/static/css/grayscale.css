@@ -27,9 +27,9 @@ body {
   background: #e43a15; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #e43a15 , #e65245); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #e43a15 , #e65245); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x:hidden;
 }
 html {
   width: 100%;
@@ -195,7 +195,6 @@ background: linear-gradient(to left, #e43a15 , #e65245); /* W3C, IE 10+/ Edge, F
 .btn-circle:focus {
   outline: none;
   color: white;
-  background: rgba(255, 255, 255, 0.1);
 }
 .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
@@ -212,6 +211,13 @@ background: linear-gradient(to left, #e43a15 , #e65245); /* W3C, IE 10+/ Edge, F
   -moz-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
+}
+
+.btn-xl {
+  background: #EDFF95;
+  color: #9ebc51;
+  font-size: 1.5em;
+  border-radius: 0.6em;
 }
 @-webkit-keyframes pulse {
   0% {
@@ -246,7 +252,7 @@ background: linear-gradient(to left, #e43a15 , #e65245); /* W3C, IE 10+/ Edge, F
 }
 .download-section {
   width: 100%;
-  padding: 4em 0;
+  padding: 2em 0;
   color: #9ebc51;
   background-color: #f2ef9a;
   -webkit-background-size: cover;
@@ -275,7 +281,6 @@ background: linear-gradient(to left, #e43a15 , #e65245); /* W3C, IE 10+/ Edge, F
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-radius: 0;
 }
 .btn-default {
   border: 1px solid #42DCA3;
@@ -308,7 +313,7 @@ ul.banner-social-buttons {
   }
 }
 footer {
-  padding: 50px 0;
+  padding-top: 8em;
 }
 footer p {
   margin: 0;
@@ -335,7 +340,7 @@ body {
 
 #battery {
   top: -5.5em!important;
-  left: 3em!important;
+  left: 3vw!important;
 }
 
 #logo {
@@ -344,7 +349,7 @@ body {
 
 @media (max-width: 767px) {
   #battery {
-    top: -4.5em!important;
+    top: -3em!important;
     left: 20vw!important;
   }
 
@@ -449,13 +454,37 @@ padding-top: 0.25em;
   }
 }
 
+.call-center {
+  display: none;
+  background: none;
+  border: 0;
+}
+
+.call-center.expanded {
+  display: block;
+  max-width: 30vw;
+  opacity: 1;
+  position: absolute;
+  right: 23vw;
+  top: 0.25em;
+  color: #e43a15;
+  border: none;
+}
+
+@media (min-width: 600px)
+{
+  .call-center.expanded {
+    top: 0.18em;
+    right: 36vw;
+  }
+}
 .invisible {
   display:none;
 }
 
 .icon img {
   width: 3em;
-  margin-top: -0.5em;
+  margin-top: -0.2em;
   opacity: 1;
 }
 
@@ -469,7 +498,6 @@ padding-top: 0.25em;
 @media (max-width: 1200px)
 {
   .call-me {
-    position: absolute;
     right: 5vw;
   }
 }
@@ -485,10 +513,13 @@ padding-top: 0.25em;
   }
 }
 
-@media (max-width: 480px)
+@media (max-width: 767px)
 {
   .img-responsive {
     max-width:75%;
+  }
+  #battery .img-responsive {
+    width:35%;
   }
 }
 .steps {
@@ -505,4 +536,24 @@ padding-top: 0.25em;
 
 #download .img-responsive {
   max-width: 60%;
+}
+
+#download .area {
+  padding-top: 2em;
+}
+
+#contact {
+    margin-top: 7em;
+}
+
+.form-control {
+    font-size: 1.3em!important;
+}
+
+.ecologias {
+  background: #000;
+  max-height: 6em;
+  padding: 1em;
+  margin-top: 2em;
+  padding-bottom: 2em;
 }
