@@ -184,13 +184,7 @@ background: linear-gradient(to left, #e43a15 , #e65245); /* W3C, IE 10+/ Edge, F
   }
 }
 .btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
-  border: 2px solid white;
-  border-radius: 100% !important;
-  font-size: 40px;
+  font-size: 2em;
   color: white;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
@@ -252,10 +246,9 @@ background: linear-gradient(to left, #e43a15 , #e65245); /* W3C, IE 10+/ Edge, F
 }
 .download-section {
   width: 100%;
-  padding: 50px 0;
-  color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
+  padding: 4em 0;
+  color: #9ebc51;
+  background-color: #f2ef9a;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -267,11 +260,8 @@ background: linear-gradient(to left, #e43a15 , #e65245); /* W3C, IE 10+/ Edge, F
   margin-top: 100px;
 }
 @media (min-width: 767px) {
-  .content-section {
-    padding-top: 250px;
-  }
   .download-section {
-    padding: 100px 0;
+    padding: 4em 0;
   }
   #map {
     height: 400px;
@@ -352,6 +342,17 @@ body {
   top: 4.5em!important;
 }
 
+@media (max-width: 767px) {
+  #battery {
+    top: -4.5em!important;
+    left: 20vw!important;
+  }
+
+  #logo {
+    top: 4.5em!important;
+    left: 20vw!important;
+  }
+}
 .space
 {
   margin-bottom:1em;
@@ -453,8 +454,9 @@ padding-top: 0.25em;
 }
 
 .icon img {
-  width: 4em;
+  width: 3em;
   margin-top: -0.5em;
+  opacity: 1;
 }
 
 .call-me {
@@ -481,4 +483,26 @@ padding-top: 0.25em;
   .call-me img {
     width:9em;
   }
+}
+
+@media (max-width: 480px)
+{
+  .img-responsive {
+    max-width:75%;
+  }
+}
+.steps {
+  padding-bottom: 2em;
+  padding-top: 3em;
+}
+.steps img {
+  max-width:40%;
+}
+
+#about h1{
+  font-size: 3em;
+}
+
+#download .img-responsive {
+  max-width: 60%;
 }

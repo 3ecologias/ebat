@@ -84,50 +84,96 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
-            <div class="col-sm-6 col-sm-offset-6">
-                <h2>Como funciona?</h2>
-                <h3>1. Ligue ou forneça o seu número para o nosso atendimento;</h3>
-                <h3>2. Forneça as informações de localização e dados sobre o veículo;</h3>
-                <h3>3. Em até 40 minutos você receberá uma visita para instalação da bateria.</h3>
+            <div class="col-sm-12">
+              <h1> Como funciona? </h1>
+            </div>
+            <div class="col-sm-6">
+                <center class="steps">
+                  <img class="img-responsive" src="{% static 'img/254040.png' %}">
+                </center>
+                <h3>Ligue ou mande seu telefone para o nosso atendimento</h3>
+            </div>
+            <div class="col-sm-6">
+                <center class="steps">
+                  <img class="img-responsive" src="{% static 'img/254061.svg' %}">
+                </center>
+                <h3>Informe sobre o veículo e local de entrega</h3>
+            </div>
+            <div class="col-sm-6">
+                <center class="steps">
+                  <img class="img-responsive" src="{% static 'img/275339.svg' %}">
+                </center>
+                <h3>Em 40 minutos receba a bateria</h3>
+            </div>
+            <div class="col-sm-6">
+                <center class="steps">
+                  <img class="img-responsive" src="{% static 'img/313115.svg' %}">
+                </center>
+                <h3>Depois de instalada, pague direto ao atendente</h3>
             </div>
         </div>
     </section>
-
     <!-- Download Section -->
     <section id="download" class="content-section text-center">
         <div class="download-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                <div class="col-sm-8">
+                    <img class="img-responsive" src="{% static 'img/119583.svg' %}">
+                </div>
+                <div class="col-sm-4">
+                    <h2>Atendemos Recife e toda região metropolitana</h2>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+        <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Fale com a gente!</h2>
+                    <h3 class="section-subheading"> Dúvidas ou sugestões?<br> Quer ser um revendedor?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" role="form" action="" method="post">
+                        <input type='hidden' name='csrfmiddlewaretoken' value='bfUVhrrHhTIiEFBV8f8BF2xG27HAIDbw0cVtO9rQZTNo4Jk1z1FCAXlDjhFHfhgu' />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="name" name="name" placeholder="Nome *" type="text" required />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="email" name="email_contact" placeholder="Email *" type="email" required />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="phone" maxlength="15" name="phone" placeholder="Telefone *" type="text" required />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" cols="40" id="message" name="content" placeholder="Mensagem *" rows="10" required>
+    </textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+
+                                <button type="submit" class="btn btn-xl">Enviar mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </section>
+
+
+        </section>
 
     <!-- Map Section -->
 
@@ -169,7 +215,6 @@
       $('.tel').toggleClass('invisible');
     });
     </script>
-
 </body>
 
 </html>
