@@ -7,8 +7,8 @@
 /* I. Logo */
 /* II. Backgrounds */
 /* III. Jumbotron! */
-/* III. Buttons */
-/* IV. Share Button */
+/* IV. Buttons */
+/* V. Share Button */
 /* */
 
 
@@ -27,8 +27,6 @@ body {
 .white-glass {
   background-color: rgba(238, 238, 238, 0.78);
   padding: 2em;
-  margin-right: 2em;
-  margin-left: 2em;
   border-radius: 6px;
 }
 
@@ -40,12 +38,21 @@ h5 {
   font-weight:500;
 }
 
+li {
+  display: inline;
+}
+
+a {
+  color: #075e54;
+}
+
 p {
   font-weight: 300;
 }
 
-li {
-  display: inline;
+.fancy-text p {
+  border-bottom: 1px solid #d2d2d2;
+  padding-bottom: 0.5em;
 }
 
 .navbar>.container {
@@ -54,40 +61,25 @@ li {
 
 .container {
   padding-top: 17vh;
+
 }
 
 @media screen and (max-width: 320px) {
   .container {
-    padding-top: 7vh;
+    padding-top: 0vh;
   }
 }
 
 /* I. Logo */
 /* land */
 .ebat-logo {
-  height:8em;
-}
-.ebat-logo>.navbar-brand>img {
-  height: 5em;
-}
-@media screen and (max-width: 420px) {
-
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /* scroll */
 .top-nav-collapse>.container>.ebat-logo {
   height:6em;
-}
-.top-nav-collapse>.container>.ebat-logo>.navbar-brand>img {
-  height: 3em;
-}
-@media screen and (max-width: 420px) {
-  .top-nav-collapse>.container>.ebat-logo {
-    height:8em;
-  }
-  .top-nav-collapse>.container>.ebat-logo>.navbar-brand>img {
-    height: 5em;
-  }
 }
 
 /* all around */
@@ -128,14 +120,21 @@ li {
 
 /* III. Jumbotron! */
 .jumbotron {
-  background-color: rgba(238, 238, 238, 0.78);
+  background-color: rgba(238, 238, 238, 0.85);
+}
+
+.jumbotron h1 {
+  color: #419B59;
+}
+
+.jumbotron p {
+  font-weight: 300;
 }
 
 @media screen and (max-width: 420px) {
   .jumbotron  {
     display:none;
   }
-
 }
 
 
@@ -155,7 +154,7 @@ li {
   color: white;
   background-color: #34B7F1;
   border: none;
-  margin-top: 1em;
+  margin-top: 2em;
   white-space: normal !important;
 }
 
@@ -185,8 +184,8 @@ li {
 /* V. Share-button */
 share-button {
   position: fixed;
-  bottom: 2%;
-  right: 2%;
+  bottom: 0;
+  right: 0;
   z-index: 2;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
