@@ -1,0 +1,239 @@
+/* */
+/* ebat css */
+/* */
+/* 3ecologias.net */
+/* */
+/* 0. Bootstrap */
+/* I. Logo */
+/* II. Backgrounds */
+/* III. Jumbotron! */
+/* III. Buttons */
+/* IV. Share Button */
+/* */
+
+
+/* 0. Bootstrap */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.white-glass {
+  background-color: rgba(238, 238, 238, 0.78);
+  padding: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
+  border-radius: 6px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h5 {
+  font-weight:500;
+}
+
+p {
+  font-weight: 300;
+}
+
+li {
+  display: inline;
+}
+
+.navbar>.container {
+  padding-top: 0px;
+}
+
+.container {
+  padding-top: 17vh;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding-top: 7vh;
+  }
+}
+
+/* I. Logo */
+/* land */
+.ebat-logo {
+  height:8em;
+}
+.ebat-logo>.navbar-brand>img {
+  height: 5em;
+}
+@media screen and (max-width: 420px) {
+
+}
+
+/* scroll */
+.top-nav-collapse>.container>.ebat-logo {
+  height:6em;
+}
+.top-nav-collapse>.container>.ebat-logo>.navbar-brand>img {
+  height: 3em;
+}
+@media screen and (max-width: 420px) {
+  .top-nav-collapse>.container>.ebat-logo {
+    height:8em;
+  }
+  .top-nav-collapse>.container>.ebat-logo>.navbar-brand>img {
+    height: 5em;
+  }
+}
+
+/* all around */
+.navbar-default {
+    background-color: #fff;
+    border-color: #e7e7e7;
+    box-shadow: 4px 4px 30px #000;
+    -moz-box-shadow: 4px 4px 30px #000;
+	  -webkit-box-shadow: 4px 4px 30px #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#000000')";
+	  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#000000');
+}
+
+/* II. Backgrounds */
+.intro-section {
+  background: url('../imgs/bg03.jpg');
+  background-size:cover;
+  background-position: 50%;
+}
+
+.about-section {
+  background: url('../imgs/bg02.jpg');
+  background-size:cover;
+  background-position: 50%;
+}
+
+.services-section {
+  background: url('../imgs/bg01.jpg');
+  background-size:cover;
+  background-position: 50%;
+}
+
+.contact-section {
+  background: url('../imgs/bg04.jpg');
+  background-size:cover;
+  background-position: 50%;
+}
+
+/* III. Jumbotron! */
+.jumbotron {
+  background-color: rgba(238, 238, 238, 0.78);
+}
+
+@media screen and (max-width: 420px) {
+  .jumbotron  {
+    display:none;
+  }
+
+}
+
+
+/* IV. Buttons */
+.btn-ebat {
+  background-color: rgba(7, 94, 84, 0.85);
+  border: none;
+  color: #DCF8C6;
+  margin-top: 1em;
+  white-space: normal !important;
+  min-width: 95%;
+  word-wrap: break-word;
+  min-height: 10em;
+}
+
+.btn-how {
+  color: white;
+  background-color: #34B7F1;
+  border: none;
+  margin-top: 1em;
+  white-space: normal !important;
+}
+
+@media screen and (max-width: 420px) {
+  .btn-ebat {
+    min-height: 0em;
+  }
+}
+
+.btn-ebat h2 {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  font-weight: 500;
+}
+@media screen and (max-width: 420px) {
+  .btn-ebat h2 {
+    font-size: 1.5em;
+  }
+  .fa-4x {
+    font-size: 3em;
+  }
+}
+.fa-6x {
+    font-size: 6em;
+}
+
+/* V. Share-button */
+share-button {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: url(../imgs/icons/share.png) no-repeat center #075E54;
+  background-size: 50%;
+  padding: 2.1em;
+  border-radius: 2.6em;
+  padding-right: 2.6em;
+  box-shadow: 4px 4px 30px #000;
+  -moz-box-shadow: 4px 4px 30px #000;
+  -webkit-box-shadow: 4px 4px 30px #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#000000')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#000000');
+
+}
+
+share-button:hover {
+  background: url(../imgs/icons/share.png) no-repeat center #25D366;
+  background-size: 55%;
+}
+
+share-button .sb-social ul li.enabled {
+    display: block !important;
+    box-shadow: 4px 4px 30px #000;
+    -moz-box-shadow: 4px 4px 30px #000;
+	  -webkit-box-shadow: 4px 4px 30px #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#000000')";
+	  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#000000');
+
+}
+
+share-button .sb-social ul {
+    margin-left: 1.2em;
+}
+
+@media screen and (max-width: 420px) {
+    share-button {
+      padding: 1.4em;
+      border-radius: 1.6em;
+      padding-right: 1.6em;
+    }
+    share-button .sb-social ul li {
+      height: 0.8em;
+      width: 0.8em;
+      padding: 0.4em 0.8em 0.4em 0.4em;
+      margin-right: 0.6em;
+      font-size: 1.8em;
+    }
+}
