@@ -161,6 +161,9 @@ To make a link smooth scroll to another section on the page, give the link the
       </div>
     </div>
   </section>
+  <section id="footer" class="footer">
+    <a href="http://3ecologias.net" target="_blank"><img src="{% static 'imgs/logo-3e.png' %}" class="img-responsive center-block img-footer" /></a>
+  </section>
   <!-- jQuery -->
   <script src="{% static 'js/jquery.js' %}"></script>
   <!-- Bootstrap Core JavaScript -->
@@ -180,6 +183,18 @@ To make a link smooth scroll to another section on the page, give the link the
       flyout: 'top center'
     },
     networks: {
+      facebook: {
+        enabled: true,
+        url: 'http://ebat.com.br',
+        title: 'EBAT - Socorro em bateria',
+        caption: 'Resolvemos seu problema!',
+        description: 'Sua bateria instalada em 40 min. em Recife e região!',
+        image: 'http://ebat.com.br/imgs/logo.png'
+      },
+      googlePlus: {
+        enabled: true,
+        url: 'http://ebat.com.br'
+      },
       pinterest: {
         enabled: false
       },

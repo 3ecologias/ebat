@@ -9,6 +9,7 @@
 /* III. Jumbotron! */
 /* IV. Buttons */
 /* V. Share Button */
+/* VI. Footer */
 /* */
 /* 0. Bootstrap */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
@@ -245,4 +246,15 @@ share-button .sb-social ul {
       margin-right: 0.6em;
       font-size: 1.8em;
     }
+}
+/* VI - Footer */
+.footer {
+    background-color: #3c763d;
+    max-height: 7vh;
+    padding: 0.3em;
+}
+
+.img-footer{
+  max-height: 6vh;
+  margin-bottom: 0.3em;
 }
