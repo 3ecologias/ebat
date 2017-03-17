@@ -22,12 +22,24 @@ body {
   -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  color: #fff;
 }
 
 .white-glass {
-  background-color: rgba(238, 238, 238, 0.78);
+  background-color: rgba(238, 238, 238, 0.85);
   padding: 2em;
   border-radius: 6px;
+}
+
+.dark-glass {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.space-bottom {
+  padding-bottom: 3em;
 }
 
 h1 {
@@ -36,6 +48,8 @@ h1 {
 
 h5 {
   font-weight:500;
+  font-size: 2em;
+  padding: 0.5em;
 }
 
 li {
@@ -51,8 +65,18 @@ p {
 }
 
 .fancy-text p {
-  border-bottom: 1px solid #d2d2d2;
   padding-bottom: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .fancy-text p {
+    margin-bottom: 3em;
+    font-size: 1.4em;
+  }
+  .about-section h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+  }
 }
 
 .navbar>.container {
@@ -60,15 +84,39 @@ p {
 }
 
 .container {
-  padding-top: 17vh;
-
+  padding-top: 9vh;
 }
 
 @media screen and (max-width: 320px) {
   .container {
     padding-top: 0vh;
+    font-size: 0.8em;
   }
 }
+
+.form-control {
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0);
+}
+input[type="text"].form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+input[type="text"].form-control::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+input[type="text"].form-control:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+input[type="text"].form-control:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+input, select, textarea{
+    color: #fff;
+}
+textarea:focus, input:focus, input:valid {
+    color: #fff;
+}
+
 
 /* I. Logo */
 /* land */
@@ -95,32 +143,32 @@ p {
 
 /* II. Backgrounds */
 .intro-section {
-  background: url('../imgs/bg03.jpg');
+  background: url('../imgs/bg03.jpg') fixed;
   background-size:cover;
   background-position: 50%;
 }
 
 .about-section {
-  background: url('../imgs/bg02.jpg');
+  background: url('../imgs/bg02.jpg') fixed;
   background-size:cover;
   background-position: 50%;
 }
 
 .services-section {
-  background: url('../imgs/bg01.jpg');
+  background: url('../imgs/bg01.jpg') fixed;
   background-size:cover;
   background-position: 50%;
 }
 
 .contact-section {
-  background: url('../imgs/bg04.jpg');
+  background: url('../imgs/bg04.jpg') fixed;
   background-size:cover;
   background-position: 50%;
 }
 
 /* III. Jumbotron! */
 .jumbotron {
-  background-color: rgba(238, 238, 238, 0.85);
+  background-color: transparent;
 }
 
 .jumbotron h1 {

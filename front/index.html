@@ -118,18 +118,16 @@ To make a link smooth scroll to another section on the page, give the link the
       </div>
     </div>
   </section>
-
   <!-- Call-us Section -->
   <section id="call-us" class="about-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 white-glass col-xs-10 col-xs-offset-1">
+        <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
           <h1>Digite seu telefone</h1>
-          <div class="input-group">
+          <div class="input-group space-bottom">
             <input type="text" class="form-control" placeholder="(XX) X XXXX XXXX" aria-describedby="basic-addon2">
             <span class="input-group-addon" id="basic-addon2"><a href="#call-us"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></span>
           </div>
-          <h2>Entraremos em contato em breve</h2>
         </div>
       </div>
     </div>
@@ -139,8 +137,11 @@ To make a link smooth scroll to another section on the page, give the link the
   <section id="chat" class="services-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 white-glass col-xs-10 col-xs-offset-1">
+        <div class="col-lg-10 col-xs-10 col-xs-offset-1">
           <h2>Atendimento Online</h2>
+          <a class="btn btn-default btn-how page-scroll" href="#how-works">
+            <h5><i class="fa fa-commenting-o" aria-hidden="true"></i>&nbsp; Clique para iniciar</h5>
+          </a>
         </div>
       </div>
     </div>
@@ -150,18 +151,31 @@ To make a link smooth scroll to another section on the page, give the link the
   <section id="how-works" class="contact-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 white-glass col-xs-10 col-xs-offset-1">
+        <div class="col-lg-10 col-xs-10 col-xs-offset-1">
           <h1>Como funciona?</h1>
           <div class="fancy-text">
-          <p>Ligue ou mande seu telefone para o nosso atendimento</p>
-          <p>Informe sobre o veículo e local de entrega</p>
-          <p>Em 40 minutos, receba sua bateria</p>
-          <p>Depois de instalada, pague direto ao atendente</p>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                <i class="fa fa-mobile fa-3x" aria-hidden="true"></i><p>Ligue ou mande seu telefone para o nosso atendimento</p>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                <i class="fa fa-location-arrow fa-3x" aria-hidden="true"></i><p>Informe sobre o veículo e local de entrega</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i><p>Em 40 minutos, receba sua bateria</p>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                <i class="fa fa-credit-card fa-3x" aria-hidden="true"></i><p>Depois de instalada, pague direto ao atendente</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
@@ -206,7 +220,19 @@ To make a link smooth scroll to another section on the page, give the link the
     }
   });
   </script>
-
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/58cc34585b89e2149e195c81/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>

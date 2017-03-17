@@ -25,7 +25,7 @@ SECRET_KEY = '2g^2(bec(rj(516lgs8=59rxb#gh9s@$-by9%6gq$r@)492kmy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.25.38']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
