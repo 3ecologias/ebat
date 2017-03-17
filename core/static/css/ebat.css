@@ -168,7 +168,7 @@ textarea:focus, input:focus, input:valid {
   white-space: normal !important;
   min-width: 95%;
   word-wrap: break-word;
-  min-height: 10em;
+  padding: 2em;
 }
 .btn-how {
   color: white;
