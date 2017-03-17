@@ -36,6 +36,8 @@ body {
 .space-bottom {
   padding-bottom: 3em;
 }
+
+
 h1 {
   font-weight: 700;
 }
@@ -60,6 +62,10 @@ p {
     font-size: 1.4em;
   }
   .about-section h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+  }
+  .contact-section h1 {
     font-size: 4em;
     margin-bottom: 0.5em;
   }
@@ -150,6 +156,7 @@ textarea:focus, input:focus, input:valid {
 }
 .jumbotron h1 {
   color: #419B59;
+  text-shadow: 1px 2px 21px rgba(0, 0, 0, 0.5);
 }
 .jumbotron p {
   font-weight: 300;
@@ -157,6 +164,19 @@ textarea:focus, input:focus, input:valid {
 @media screen and (max-width: 420px) {
   .jumbotron  {
     display:none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron  {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .navbar {
+    padding: 0px 0px;
+  }
+  .container {
+    padding-top: 3vh;
   }
 }
 /* IV. Buttons */
@@ -201,7 +221,7 @@ textarea:focus, input:focus, input:valid {
 /* V. Share-button */
 share-button {
   position: fixed;
-  bottom: 0;
+  bottom: -1em;
   right: 0;
   z-index: 2;
   -webkit-transform: translate(-50%, -50%);
@@ -209,9 +229,9 @@ share-button {
   transform: translate(-50%, -50%);
   background: url(../imgs/icons/share.png) no-repeat center #075E54;
   background-size: 50%;
-  padding: 2.1em;
-  border-radius: 2.6em;
-  padding-right: 2.6em;
+  padding: 2em;
+  border-radius: 2em;
+  padding-right: 2em;
   box-shadow: 4px 4px 30px #000;
   -moz-box-shadow: 4px 4px 30px #000;
   -webkit-box-shadow: 4px 4px 30px #000;
@@ -234,18 +254,16 @@ share-button .sb-social ul {
     margin-left: 1.2em;
 }
 @media screen and (max-width: 420px) {
-    share-button {
-      padding: 1.4em;
-      border-radius: 1.6em;
-      padding-right: 1.6em;
-    }
-    share-button .sb-social ul li {
-      height: 0.8em;
-      width: 0.8em;
-      padding: 0.4em 0.8em 0.4em 0.4em;
-      margin-right: 0.6em;
-      font-size: 1.8em;
-    }
+  share-button {
+    font-size: 1em;
+  }
+  share-button .sb-social ul li {
+    height: 0.8em;
+    width: 0.8em;
+    padding: 0.4em 0.8em 0.4em 0.4em;
+    margin-right: 0.6em;
+    font-size: 1.6em;
+  }
 }
 /* VI - Footer */
 .footer {
