@@ -6,7 +6,7 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^$', views.fullsite),
+    url(r'^$', views.Index.as_view(), name="index"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
