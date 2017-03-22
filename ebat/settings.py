@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'core',
+    'localflavor',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
+
+EMAIL_BACKEND = "sgbackend.SendGridBackend"
+SENDGRID_API_KEY = "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"
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'ebat.atendimento@gmail.com'
+EMAIL_HOST_USER = '3ecologias'
+EMAIL_HOST_PASSWORD = 'm1c0leao'
+EMAIL_USE_TLS = True
