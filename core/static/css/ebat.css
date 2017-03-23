@@ -92,12 +92,18 @@ p {
     padding-top: 0vh;
     font-size: 0.8em;
   }
+  .form-control {
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0);
+    height: 50px!important;
+    font-size: 18px!important;
+  }
 }
 .form-control {
   font-weight: 600;
   background: rgba(255, 255, 255, 0);
   height: 50px!important;
-  font-size: 17px!important;
+  font-size: 21px!important;
 }
 input[type="text"].form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: white;
