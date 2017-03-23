@@ -97,8 +97,12 @@ p {
   font-weight: 600;
   background: rgba(255, 255, 255, 0);
   height: 50px!important;
+<<<<<<< HEAD
+  font-size: 18px!important;
+=======
   font-size: 21px!important;
 
+>>>>>>> 259d1a0183e77163b05c5ba809e72056cf5bae66
 }
 input[type="text"].form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: white;
