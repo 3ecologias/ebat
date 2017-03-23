@@ -4,7 +4,7 @@ from django.core.mail import EmailMessage, BadHeaderError
 
 class Call_me(forms.Form):
     phone = forms.CharField(required=True,label='', widget=forms.TextInput(
-    attrs={'class':'form-control','placeholder':'(XX) X XXXX XXXX', 'aria-describedby':'basic-addon2'}))
+    attrs={'class':'form-control','placeholder':'(XX) X XXXX XXXX', 'aria-describedby':'basic-addon2', 'type':'tel', 'maxlength':'20'}))
 
     def send_email(self):
         phone = self.cleaned_data['phone']
