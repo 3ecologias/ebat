@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  $('#id_phone').mask('(81) 00000-0000')
+  $('#id_phone').mask('(00) 00000-0000')
 });
