@@ -11,7 +11,7 @@ class Call_me(forms.Form):
         subject = 'ME LIGUE!'
 
         try:
-            email = EmailMessage(subject+" ,Telefone "+phone, phone, 'ebat.atendimento@gmail.com',['ebat.atendimento@gmail.com'])
+            email = EmailMessage(subject+" ,Telefone "+phone, phone, 'atendimento@ebat.com.br',['atendimento@ebat.com.br'])
             email.content_subtype = "html"
             email.send()
 
