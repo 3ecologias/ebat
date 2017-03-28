@@ -56,6 +56,10 @@ p {
 .fancy-text p {
   padding-bottom: 0.5em;
 }
+
+.margin-bottom {
+  margin-bottom: 1em;
+}
 @media screen and (min-width: 768px) {
   .fancy-text p {
     margin-bottom: 3em;
@@ -160,9 +164,10 @@ textarea:focus, input:focus, input:valid {
   background-position: 50%;
 }
 .contact-section {
-  background: url('../imgs/bg04.jpg') fixed;
+  background: url('../imgs/bg06.jpg') fixed;
   background-size:cover;
   background-position: 50%;
+  padding-top: 100px;
 }
 /* III. Jumbotron! */
 .jumbotron {
@@ -176,8 +181,17 @@ textarea:focus, input:focus, input:valid {
   font-weight: 300;
 }
 @media screen and (max-width: 420px) {
-  .jumbotron  {
-    display:none;
+
+  .jumbotron {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+  }
+  .jumbotron h1  {
+    font-size: 2em;
+  }
+  .jumbotron p  {
+    font-size: 1.3em;
   }
 }
 
@@ -211,9 +225,29 @@ textarea:focus, input:focus, input:valid {
   margin-top: 2em;
   white-space: normal !important;
 }
+
+.battery {
+  width: 5em;
+  padding-bottom: 0.4em;
+}
+
+.btn-default:hover, .btn-default:active:focus, .btn-default:active:hover, .btn-default.focus, .btn-default:focus {
+    color: #DCF8C6!important;
+    background-color: #419B59!important;
+    border-color: #adadad!important;
+}
+
+
 @media screen and (max-width: 420px) {
   .btn-ebat {
     min-height: 0em;
+    padding: 0.5em;
+  }
+  .ebat-logo img {
+    max-width: 60%;
+  }
+  .intro-section {
+    padding-top: 100px;
   }
 }
 .btn-ebat h2 {
