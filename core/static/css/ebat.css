@@ -316,10 +316,13 @@ share-button .sb-social ul {
 /* VI - Footer */
 .footer {
     background-color: #3c763d;
-    max-height: 7vh;
     padding: 0.3em;
 }
 
+.address {
+    background-color: #3c763d;
+    padding: 0.3em;
+}
 .img-footer{
   max-height: 6vh;
   margin-bottom: 0.3em;
