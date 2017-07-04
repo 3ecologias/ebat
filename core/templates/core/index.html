@@ -80,6 +80,39 @@ To make a link smooth scroll to another section on the page, give the link the
 <!-- The #page-top ID is part of the scrolling feature
 - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Google Code for Ligue pra gente Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 847053689;
+    w.google_conversion_label = "ifxzCMmL4HIQ-Yb0kwM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
   <!-- Share Social Button -->
   <share-button></share-button>
   <!-- Navigation -->
@@ -109,7 +142,7 @@ To make a link smooth scroll to another section on the page, give the link the
       <div class="row-fluid">
         <!-- begin button -->
         <div class="col-sm-6">
-          <a class="btn btn-default btn-ebat col-lg-12" href="tel:08134413608">
+          <a class="btn btn-default btn-ebat col-lg-12" onclick="goog_report_conversion ('tel:08134413608')" href="tel:08134413608">
             <img class="img-responsive center-block battery" src="{% static 'imgs/battery.png' %}"><h2>3441 3608</h2>
           </a>
         </div>
@@ -141,7 +174,7 @@ To make a link smooth scroll to another section on the page, give the link the
             <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 input-group space-bottom">
               {{form.phone}}
               {{form.phone.errors}}
-              <a href="javascript:document.forms[0].submit()" class="input-group-addon" id="basic-addon2"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+              <a onclick="goog_report_conversion ('http://ebat.com.br/#call-us')" href="javascript:document.forms[0].submit()" class="input-group-addon" id="basic-addon2"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
             </div>
             {% for message in messages %}
               <h3>{{message}}</h3>
