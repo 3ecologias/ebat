@@ -115,7 +115,7 @@ chosen link or button. -->
 </script>
 
   <!-- Share Social Button -->
-  <share-button></share-button>
+  <!-- <share-button></share-button> -->
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -144,7 +144,7 @@ chosen link or button. -->
         <!-- begin button -->
         <div class="col-sm-6">
           <a class="btn btn-default btn-ebat col-lg-12" onclick="goog_report_conversion ('tel:08134413608')" href="tel:08134413608">
-            <img class="img-responsive center-block battery" src="{% static 'imgs/battery.png' %}"><h2>3441 3608</h2>
+            <img class="img-responsive center-block battery" src="{% static 'imgs/battery.png' %}"><h2>(81) 3441 3608</h2>
           </a>
         </div>
         <!-- endbutton -->
@@ -156,11 +156,11 @@ chosen link or button. -->
         </div>
         <!-- endbutton -->
       </div>
-      <div class="row-fluid">
+      <!-- <div class="row-fluid">
         <a class="btn btn-default btn-how page-scroll" href="#how-works">
-          <h5>Como funciona?</h5>
+          <h5>+</h5>
         </a>
-      </div>
+      </div> -->
     </div>
   </section>
   <!-- Call-us Section -->
@@ -168,8 +168,6 @@ chosen link or button. -->
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-          <h1>Digite seu telefone</h1>
-          <h3> Ligaremos para você em instantes </h3>
           <form method="post">
             {% csrf_token %}
             <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 input-group space-bottom">
@@ -182,6 +180,9 @@ chosen link or button. -->
             {% empty %}
             {% endfor %}
           </form>
+          <h1>Digite seu telefone</h1>
+          <h3> Ligaremos para você em instantes </h3>
+
         </div>
       </div>
     </div>
@@ -195,7 +196,7 @@ chosen link or button. -->
           <div class="fancy-text">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                <i class="fa fa-mobile fa-4x" aria-hidden="true"></i><p>Use o atendimento online, ligue ou envie seu telefone</p>
+                <i class="fa fa-mobile fa-4x" aria-hidden="true"></i><p>Use o atendimento online, ligue ou envie o número de seu telefone</p>
               </div>
               <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
                 <i class="fa fa-location-arrow fa-4x" aria-hidden="true"></i><p>Informe sobre o veículo e local de entrega</p>

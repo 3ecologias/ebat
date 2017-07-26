@@ -93,7 +93,7 @@ p {
 }
 @media screen and (max-width: 420px) {
   .container {
-    padding-top: 0vh;
+    padding-top: 17vh;
     font-size: 0.8em;
   }
   .form-control {
@@ -139,7 +139,7 @@ textarea:focus, input:focus, input:valid {
 }
 /* all around */
 .navbar-default {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
     border-color: #e7e7e7;
     box-shadow: 4px 4px 30px #000;
     -moz-box-shadow: 4px 4px 30px #000;
@@ -149,7 +149,7 @@ textarea:focus, input:focus, input:valid {
 }
 /* II. Backgrounds */
 .intro-section {
-  background: url('../imgs/bg03.jpg') fixed;
+  background: url('../imgs/ebat_baterias_recife.jpg') fixed;
   background-size:cover;
   background-position: 50%;
 }
@@ -174,8 +174,8 @@ textarea:focus, input:focus, input:valid {
   background-color: transparent;
 }
 .jumbotron h1 {
-  color: #419B59;
-  text-shadow: 1px 2px 21px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.9);
 }
 .jumbotron p {
   font-weight: 300;
@@ -185,13 +185,14 @@ textarea:focus, input:focus, input:valid {
   .jumbotron {
     padding-top: 0px;
     padding-bottom: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .jumbotron h1  {
     font-size: 2em;
   }
   .jumbotron p  {
     font-size: 1.3em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -209,9 +210,9 @@ textarea:focus, input:focus, input:valid {
 }
 /* IV. Buttons */
 .btn-ebat {
-  background-color: rgba(7, 94, 84, 0.85);
+  background-color: rgba(223, 99, 40, 0.9);
   border: none;
-  color: #DCF8C6;
+  color: #FFF;
   margin-top: 1em;
   white-space: normal !important;
   min-width: 95%;
@@ -229,6 +230,9 @@ textarea:focus, input:focus, input:valid {
 .battery {
   width: 4.9em;
   padding-bottom: 0.4em;
+  filter: brightness(100);
+  -webkit-filter: brightness(100);
+  -moz-filter: brightness(100);
 }
 
 .btn-default:hover, .btn-default:active:focus, .btn-default:active:hover, .btn-default.focus, .btn-default:focus {
@@ -326,4 +330,9 @@ share-button .sb-social ul {
 .img-footer{
   max-height: 6vh;
   margin-bottom: 0.3em;
+}
+
+.input-group-addon {
+  background-color: rgba(223, 99, 40, 0.9);
+  color: #fff;
 }
