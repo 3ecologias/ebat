@@ -21,9 +21,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   color: #fff;
-  background: url('../imgs/ebat_baterias_recife.jpg') fixed;
-  background-size:cover;
-  background-position: 50%;
 }
 .white-glass {
   background-color: rgba(238, 238, 238, 0.85);
@@ -96,7 +93,7 @@ p {
 }
 @media screen and (max-width: 420px) {
   .container {
-    padding-top: 17vh;
+    padding-top: 15vh;
     font-size: 0.8em;
   }
   .form-control {
@@ -152,10 +149,14 @@ textarea:focus, input:focus, input:valid {
 }
 /* II. Backgrounds */
 .intro-section {
-  background: transparent;
+  background: url('../imgs/ebat_baterias_recife.jpg') fixed;
+  background-size:cover;
+  background-position: 50%;
 }
 .about-section {
-  background: transparent;
+  background: url('../imgs/ebat_baterias_recife.jpg') fixed;
+  background-size:cover;
+  background-position: 50%;
 }
 .services-section {
   background: url('../imgs/bg01.jpg') fixed;
