@@ -13,6 +13,21 @@
 /* */
 /* 0. Bootstrap */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url('../imgs/ebat_baterias_recife.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,6 +36,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   color: #fff;
+  background: transparent;
 }
 .white-glass {
   background-color: rgba(238, 238, 238, 0.85);
@@ -36,7 +52,6 @@ body {
 .space-bottom {
   padding-bottom: 3em;
 }
-
 
 h1 {
   font-weight: 700;
@@ -109,16 +124,16 @@ p {
   height: 50px!important;
   font-size: 21px!important;
 }
-input[type="text"].form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+input[type="tel"].form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: white;
 }
-input[type="text"].form-control::-moz-placeholder { /* Firefox 19+ */
+input[type="tel"].form-control::-moz-placeholder { /* Firefox 19+ */
   color: white;
 }
-input[type="text"].form-control:-ms-input-placeholder { /* IE 10+ */
+input[type="tel"].form-control:-ms-input-placeholder { /* IE 10+ */
   color: white;
 }
-input[type="text"].form-control:-moz-placeholder { /* Firefox 18- */
+input[type="tel"].form-control:-moz-placeholder { /* Firefox 18- */
   color: white;
 }
 input, select, textarea{
@@ -149,14 +164,10 @@ textarea:focus, input:focus, input:valid {
 }
 /* II. Backgrounds */
 .intro-section {
-  background: url('../imgs/ebat_baterias_recife.jpg') fixed;
-  background-size:cover;
-  background-position: 50%;
+  background: transparent;
 }
 .about-section {
-  background: url('../imgs/ebat_baterias_recife.jpg') fixed;
-  background-size:cover;
-  background-position: 50%;
+  background: transparent;
 }
 .services-section {
   background: url('../imgs/bg01.jpg') fixed;
@@ -164,7 +175,7 @@ textarea:focus, input:focus, input:valid {
   background-position: 50%;
 }
 .contact-section {
-  background: url('../imgs/bg06.jpg') fixed;
+  background: url('../imgs/bg01.jpg') fixed;
   background-size:cover;
   background-position: 50%;
   padding-top: 100px;
@@ -328,7 +339,7 @@ share-button .sb-social ul {
     padding: 0.3em;
 }
 .img-footer{
-  max-height: 6vh;
+  max-height: 4vh;
   margin-bottom: 0.3em;
 }
 
