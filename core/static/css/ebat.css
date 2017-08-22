@@ -337,6 +337,7 @@ share-button .sb-social ul {
 .address {
     background-color: #3c763d;
     padding: 0.3em;
+    text-align: center;
 }
 .img-footer{
   max-height: 4vh;
